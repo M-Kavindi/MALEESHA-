@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a1f44; /* Dark Blue Background */
+  color: #e0f7ff; /* Light Cyan for contrast */
+  line-height: 1.6;
+  background-image: linear-gradient(135deg, #0a1f44, #001a3e); /* Dark blue gradient */
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #e0f7ff; /* Light Cyan links */
+}
+
+/* Header Section */
+header {
+  background-color: #0a1f44; /* Dark Blue */
+  color: #e0f7ff; /* Light Cyan for text */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px #00d4ff; /* Neon glow effect */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+header a {
+  display: inline-block;
+  color: #e0f7ff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #e0f7ff;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  background: #00d4ff; /* Neon blue */
+  color: #0a1f44;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #00d4ff; /* Neon blue border */
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #e0f7ff; /* Light Cyan */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #b0c9e6; /* Light blue */
+  margin: 5px 0;
+}
+
+.hero .btn {
+  display: inline-block;
+  background-color: #00d4ff; /* Neon blue */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #357ABD;
+}
+
+/* About Me Section */
+#about {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px #00d4ff; /* Neon glow effect */
+  border-radius: 10px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: #00d4ff; /* Neon blue */
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #b0c9e6; /* Light blue text */
+}
+
+/* Education Section */
+#education {
+  padding: 50px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#education h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.timeline-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px #00d4ff; /* Neon glow effect */
+  text-align: left;
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  color: #e0f7ff; /* Light Cyan */
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: #b0c9e6;
+}
+
+/* Extracurricular Activities Section */
+#activities {
+  background: #0a1f44;
+  padding: 50px 20px;
+  margin-top: 20px;
+}
+
+#activities h2 {
+  font-size: 2rem;
+  color: #00d4ff; /* Neon blue */
+  margin-bottom: 30px;
+}
+
+.activity-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.activity-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px #00d4ff; /* Neon glow effect */
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+}
+
+.activity-card h3 {
+  font-size: 1.1rem;
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.activity-card p {
+  font-size: 0.9rem;
+  color: #b0c9e6;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #0a1f44;
+  color: white;
+  margin-top: 20px;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#contact a {
+  color: #00d4ff; /* Neon blue links */
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .activity-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-card {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+}
