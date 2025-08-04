@@ -1,117 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maleesha Kavindi - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Maleesha Kavindi - Portfolio CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      width: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+
+    .header h1 {
+      margin-top: 10px;
+      font-size: 2.5rem;
+      color: #00f7ff;
+    }
+
+    .section {
+      margin: 25px 0;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      border-left: 5px solid #00f7ff;
+      padding-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: scale(1.02);
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .half {
+      flex: 1 1 45%;
+    }
+
+    a {
+      color: #00f7ff;
+      word-break: break-all;
+    }
+
+    .download {
+      display: block;
+      margin: 30px auto 0;
+      background: #00f7ff;
+      color: #000;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .download:hover {
+      background: #00e0e0;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <img src="Malee.jpg" alt="Maleesha Kavindi" class="profile-img">
+  <div class="container">
+    <div class="header">
+      <img src="Malee.jpg" alt="Maleesha Kavindi">
       <h1>Maleesha Kavindi</h1>
-      <p>Diploma in English | Diploma in Teaching | Diploma in Primary Teaching</p>
-      <p>Nugawela Central College | No. 364/c, Pallegama, Ankubura, Sri Lanka</p>
-      <a href="Maleesha.pdf" download class="btn">Download CV</a>
     </div>
-  </section>
 
-  <!-- About Me Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a dedicated and flexible individual with experience in administration and teaching.
-        My excellent interpersonal skills and ability to adapt to new challenges make me an asset in any role.
-      </p>
+    <div class="section">
+      <h2>Profile Summary</h2>
+      <div class="card">
+        A flexible and experienced insurance administrator with strong time management and communication skills. Adept at working in teams while also demonstrating initiative and problem-solving abilities. Skilled in negotiation, critical thinking, and resourceful decision-making, always eager to learn and take on new challenges.
+      </div>
     </div>
-  </section>
 
-  <!-- Education Section -->
-  <section id="education" class="education">
-    <div class="container">
+    <div class="section flex">
+      <div class="half">
+        <h2>Contact</h2>
+        <div class="card">
+          <p><strong>Phone:</strong> +94 741 658 892</p>
+          <p><strong>Email:</strong> <a href="mailto:maleeshakavindi64@gmail.com">maleeshakavindi64@gmail.com</a></p>
+          <p><strong>Address:</strong> No. 359/A, Pallegama, Ankumbura</p>
+          <p><strong>Website:</strong> <a href="https://m-kavindi.github.io/MALEESHA-/">m-kavindi.github.io</a></p>
+        </div>
+      </div>
+
+      <div class="half">
+        <h2>Skills</h2>
+        <div class="card">
+          <ul>
+            <li>Teamwork</li>
+            <li>Time Management</li>
+            <li>Leadership</li>
+            <li>Effective Communication</li>
+            <li>Critical Thinking</li>
+          </ul>
+        </div>
+
+        <h2>Languages</h2>
+        <div class="card">
+          <ul>
+            <li>Sinhala (Native)</li>
+            <li>English (Fluent)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
       <h2>Education</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Diploma in Primary Teaching</h3>
-          <p>Reg.No: PV79615</p>
-          <p>Ceylon English Training College (CET Campus)</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Diploma in English Teaching</h3>
-          <p>Reg.No: PV79615</p>
-          <p>Ceylon English Training College (CET Campus)</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Advanced Level (2023/2024)</h3>
-          <p>Nugawela National School</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Ordinary Level (2020)</h3>
-          <p>K/Ankumbura Parackrama National School</p>
-        </div>
+      <div class="card">
+        <p><strong>2025 - 2028:</strong> B.E.D Honours in Primary Education (Ongoing), Open University of Sri Lanka</p>
+        <p><strong>2023 - 2024:</strong> Advanced Level (A/L), Nugawela National School</p>
+        <p><strong>2020:</strong> Ordinary Level (O/L), K/Ankumbura Parackrama National School</p>
       </div>
     </div>
-  </section>
 
-  <!-- Extracurricular Section -->
-  <section id="activities" class="activities">
-    <div class="container">
-      <h2>Extracurricular Activities</h2>
-      <div class="activity-grid">
-        <div class="activity-card">
-          <h3>Leadership Workshop</h3>
-          <p>Organized by Ministry of Youth Affairs, Central Province</p>
-        </div>
-        <div class="activity-card">
-          <h3>Basic Counseling Skills</h3>
-          <p>Chamber Psychology and Counseling ESTD 2021</p>
-        </div>
-        <div class="activity-card">
-          <h3>Journalism Workshop</h3>
-          <p>"Madya Pradeepa" by ITN Channel</p>
-        </div>
-        <div class="activity-card">
-          <h3>Speech Training</h3>
-          <p>Old Anandiyan Buddhist Society, 2018</p>
-        </div>
-        <div class="activity-card">
-          <h3>Media Day Winner</h3>
-          <p>1st Place - Writing Prose (Secondary Category), 2018</p>
-        </div>
-        <div class="activity-card">
-          <h3>Essay Competition</h3>
-          <p>1st Place - Verse Essay (National Library), 2018</p>
-        </div>
-        <div class="activity-card">
-          <h3>Handwriting Competition</h3>
-          <p>2nd Place (National Library), 2018</p>
-        </div>
-        <div class="activity-card">
-          <h3>Dancing & Drumming</h3>
-          <p>Ministry of Culture & Arts Skill Development, 2017</p>
-        </div>
-        <div class="activity-card">
-          <h3>Cadet Corps</h3>
-          <p>President’s Colors Awarding Ceremony & Independence Day Celebration</p>
-        </div>
+    <div class="section">
+      <h2>Tech Skills</h2>
+      <div class="card">
+        <ul>
+          <li>Microsoft Office</li>
+          <li>Basic IT & Internet Usage</li>
+          <li>Web Portfolio Maintenance</li>
+          <li>Digital Communication Tools</li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>📍 No. 364/c, Pallegama, Ankubura, Sri Lanka</p>
-      <p>📞 +94 74 165 8892 </p>
-      <p>📧 <a href="mailto:mkavindi463@gmail.com">mkavindi463@gmail.com</a></p>
+    <div class="section">
+      <h2>Certifications & Training</h2>
+      <div class="card">
+        <ul>
+          <li>Diploma in Primary Teaching – CET Campus</li>
+          <li>Diploma in English Teaching – CET Campus</li>
+          <li>Basic Counseling – Chamber Psychology and Counseling (ESTD 2021)</li>
+          <li>Leadership & Personality Development – Ministry of Youth Affairs, Central Province</li>
+          <li>Certificate in Information Technology – AUCKLAND Campus</li>
+          <li>6-Month English Course – British Council, Kandy</li>
+        </ul>
+      </div>
     </div>
-  </section>
 
-  <script src="script.js"></script>
+    <div class="section">
+      <h2>Achievements & Extracurriculars</h2>
+      <div class="card">
+        <ul>
+          <li>1st Place – Writing Prose (Sri Rahula College, 2018)</li>
+          <li>1st Place – Verse Essay (National Library Board, 2018)</li>
+          <li>2nd Place – Handwriting (National Library Board, 2018)</li>
+          <li>Dancing & Drumming Competitions – Ministry of Culture & Arts</li>
+          <li>Cadet Corps Events – Independence Day & President’s Colors</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Declaration</h2>
+      <div class="card">
+        I hereby certify that the above information is true and accurate to the best of my knowledge. I am confident that my skills and qualifications make me a strong candidate, and I would be happy to provide any additional information or clarifications if required.
+        <br><br>
+        <strong>Maleesha Kavindi</strong><br>
+        <em>Date: 4th August 2025</em>
+      </div>
+    </div>
+
+    <a href="Maleesha.pdf" download class="download">Download CV</a>
+  </div>
 </body>
+
 </html>
